@@ -1,0 +1,94 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body, .container {
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.link{
+	color: var(--fnt);
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+.link:visited {
+	color: var(--fnt);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.front-link {
+	padding: 7px;
+	border: 2px solid var(--fnt);
+}
+.front-link:hover {
+    text-decoration: none;
+    background-color: var(--greyy);
+}
+
+.hover-black:hover {
+	text-decoration: none;
+	color: var(--fnt);
+}
+
+
+.nav>li>a:hover {
+	background-color: var(--greyy);
+}
+
+.container .jumbotron {
+	padding: 30px;
+}
+.jumbotron {
+	color: var(--fnt);
+	background-color: var(--bg);
+	border: 2px solid var(--fnt);
+}
+
+.row .jumbotron {
+	margin-right: 15px;
+}
+
+.jumbotron h1 {
+	font-size: 36px;
+}
+
+.jumbo-p {
+	font-size: 16px;
+}
+
+.logo {
+	font-size: 68px;
+	margin-bottom: 30px;
+}
+
+.border {
+	border: 2px solid var(--fnt)
+}
+
+.page-center {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 18vh;
+}
+
+.form {
+	padding: 15px;
+	font-size: 16px;
+}
+.radio-inline+.radio-inline, .radio-inline{
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.control-label{
+	font-size: 32px;
+	font-weight: normal;
+}

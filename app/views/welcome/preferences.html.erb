@@ -1,0 +1,29 @@
+<%= content_for(:sidebar) do %>
+<%= render :partial => "layouts/sidebar" %>
+<% end %>
+
+<div class="form col-sm-9">
+    <%= bootstrap_form_tag url: '/preferences_submitted', :html => { :method => 'get' } do |f| %>
+    <%= f.form_group :num, label: { text: "Number of Query Results:" } do %>
+    <br>
+    <%= f.radio_button :num, 1, label: "1", inline: true %>
+    <%= f.radio_button :num, 3, label: "3", checked: true, inline: true %>
+    <%= f.radio_button :num, 5, label: "5", inline: true %>
+    <% end %>
+
+  <%= f.form_group :rec, label: { text: "Recommend Me Songs Based On:" } do %>
+    <br>
+    <%= f.radio_button :rec, "Acousticness", label: "Acousticness", checked: true, inline:true %>
+    <%= f.radio_button :rec, "Danceability", label: "Danceability", inline:true %>
+    <%= f.radio_button :rec, "Instrumentalness", label: "Instrumentalness", inline:true %>
+    <%= f.radio_button :rec, "Energy", label: "Energy", inline:true %>
+    <%= f.radio_button :rec, "Liveness", label: "Liveness", inline:true %>
+    <%= f.radio_button :rec, "Loudness", label: "Loudness", inline:true %>
+    <%= f.radio_button :rec, "Speechiness", label: "Speechiness", inline:true %>
+    <%= f.radio_button :rec, "Tempo", label: "Tempo", inline:true %>
+    <%= f.radio_button :rec, "Valence", label: "Valence", inline:true %>
+    <% end %>
+
+    <%= f.submit %>
+    <% end %>
+</div>
