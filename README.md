@@ -1,5 +1,6 @@
 Musaic
 =====================
+Nikhil Vanderklaauw, Sarah Zhou, Luke Bauer, Zachary Liu, Emily Meng
 
 [Try for Yourself on Heroku Here](https://sleepy-fjord-10699.herokuapp.com/ "Heroku Link")
 
