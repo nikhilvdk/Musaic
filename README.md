@@ -66,7 +66,7 @@ A user can follow many playlists. A playlist can be followed by many users. A pl
 
 ### Windows:
 
-1. unzip database files or git clone https://github.com/sarahzhou97/SpotifyApp.git
+1. unzip database files or git clone https://github.com/nikhilvdk/Musaic.git
 2. in \app\assets\javascripts\application.js remove the line 'require tree'
 3. create a role in pgadmin corresponding to you (for me it was "zachary")
 4. cd into the app
@@ -84,7 +84,7 @@ A user can follow many playlists. A playlist can be followed by many users. A pl
 
 ### Mac:
 
-1. unzip database files or git clone https://github.com/sarahzhou97/SpotifyApp.git
+1. unzip database files or git clone https://github.com/nikhilvdk/Musaic.git
 2. cd into the app
 3. Run ‘bundle install’
 4. Run 'rails s'
