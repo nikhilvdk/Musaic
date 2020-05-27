@@ -4,25 +4,25 @@ Nikhil Vanderklaauw, Sarah Zhou, Luke Bauer, Zachary Liu, Emily Meng
 
 [Try for Yourself on Heroku Here](https://sleepy-fjord-10699.herokuapp.com/ "Heroku Link")
 
-##Introduction
+## Introduction
 
 Musaic is a Spotify analyzer application that allows users sign into their Spotify accounts to see interesting analyses about their music tastes, get song recommendations based on specified song attributes, and how they compare to other users in the database.
 
-##Preview
+## Preview
 ![picture](img/signin.png)
 ![picture](img/name.png)
 ![picture](img/user.png)
 ![picture](img/global.png)
 ![picture](img/preferences.png)
 
-##E/R Diagram
+## E/R Diagram
 ![picture](img/erdiagram.png)
 
 ##Assumptions
 
 A user can follow many playlists. A playlist can be followed by many users. A playlist can be created by one person. A user can save many tracks and a track can be saved by many users. Each track/album has attribute artistid that indicates they can be by only one artist. A playlist can contain many tracks and a track can be contained by many playlists. Each track is guaranteed to have one album and one artist it belongs to. 
 
-##Descriptions
+## Descriptions
 
 Albums(album_id, album_type, artist_id, genre, release_date, album_name, popularity)
 
@@ -62,9 +62,9 @@ Tracks(track_id, album_id, song_name, popularity, artist_id, acousticness, dance
 * artist_id represents artist of track(references artist)
 
 
-##To Run
+## To Run
 
-###Windows:
+### Windows:
 
 1. unzip database files or git clone https://github.com/sarahzhou97/SpotifyApp.git
 2. in \app\assets\javascripts\application.js remove the line 'require tree'
@@ -82,7 +82,7 @@ Tracks(track_id, album_id, song_name, popularity, artist_id, acousticness, dance
 11. At this point the app should run on local server 'localhost:3000'
 12. To deploy app, you need to push to heroku
 
-###Mac:
+### Mac:
 
 1. unzip database files or git clone https://github.com/sarahzhou97/SpotifyApp.git
 2. cd into the app
